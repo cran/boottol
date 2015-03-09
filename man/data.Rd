@@ -2,7 +2,7 @@
 \alias{data}
 \docType{data}
 \title{
-Bootstrap Tolerance Levels for Credit Scoring Validation Statistics
+Bootstrap Tolerance Levels for Credit Scoring Validation Statistics: Rank Order Statistics
 }
 \description{
 This data was randomly generated. The Target varible is binary. The Score variable ranges from 0-90 in intervals of 10.

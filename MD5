@@ -1,6 +1,10 @@
-55bae93e6e0ca9ca63a8f919de5210f9 *DESCRIPTION
-bf7e6aa10d17e523d9f250a6b6771a44 *NAMESPACE
-106670938b0581f0a025469817e8844f *R/boottol.R
+6bcbfb6f95fb91ebdf407c3489607c42 *DESCRIPTION
+8d92e2bf95338023f432430b0d4a781a *NAMESPACE
+bfe3db05ea601cb95d4df76c000a4c1f *R/boottol.R
+0b04859f67cd8bf8c09d6298662c886f *R/vastol.R
 fcc97db3299b0cde7210ce43609dda88 *data/data.rda
-969f4cc33894bfa2822fee083e21f5b4 *man/boottol.Rd
-7fedaf83357f2f52606fa0d7fd803487 *man/data.Rd
+681acb27b429af1f0914be3cd86ed161 *data/vasdata.rda
+3f9efc2c7b753445d2b487838c9fdd61 *man/boottol.Rd
+7da7631c9f9b819a7efd9e9a2a634b80 *man/data.Rd
+4b35226f941efa5432e648d2747a3341 *man/vasdata.Rd
+ce53f4231058badc85e25a2a0a6a3be5 *man/vastol.Rd

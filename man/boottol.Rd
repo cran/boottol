@@ -2,9 +2,9 @@
 % Please edit documentation in R/boottol.R
 \name{boottol}
 \alias{boottol}
-\title{Creates 99 percent bootstrap percentile confidence intervals around credit scoring validation statistics}
+\title{Bootstrap Percentile Confidence Intervals.}
 \usage{
-boottol(score, target, bootsamp, lth, grp)
+boottol(score, target, bootsamp, lltml, grp, alpha)
 }
 \arguments{
 \item{score}{- The score groupings.}
@@ -13,15 +13,21 @@ boottol(score, target, bootsamp, lth, grp)
 
 \item{bootsamp}{- How many bootstrap samples to be computed. When bootsamp is too low, a warning will be produced.}
 
-\item{lth}{- If the score is rank ordered least likely to most likely then set equal to True, else False.}
+\item{lltml}{- If the score is rank ordered least likely to most likely then set equal to 1.}
 
 \item{grp}{- An integer value of how the scores are grouped.}
+
+\item{alpha}{- Confidence level.}
 }
 \description{
-Creates 99 percent bootstrap percentile confidence intervals around credit scoring validation statistics
+Creates 100(1-alpha) percent bootstrap percentile confidence intervals around the KS, AUROC, and Gini statistics.
 }
 \examples{
 data("data")
-\dontrun{tol.level=boottol(score=data$Score,target=data$Target,bootsamp=2000,lth="True",grp=10)}
+\dontrun{tol.level=boottol(score=data$Score,target=data$Target
+,bootsamp=2000,lltml=1,grp=10, alpha=0.99)}
+}
+\references{
+[1] Anderson, R., ``The Credit Scoring Toolkit Theory and Practice for Retail Credit Risk Management and Decision Automation," Oxford University Press, Oxford, NY, 2007.
 }
 
